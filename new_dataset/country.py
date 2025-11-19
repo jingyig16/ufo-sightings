@@ -43,5 +43,5 @@ merged[old_lon_col] = merged["Longitude_new"]
 
 merged = merged.drop(columns=["country_key", "Latitude_new", "Longitude_new"])
 
-merged.to_csv(out_path, index=False, encoding="latin1")
+merged.to_csv(out_path, index=False, encoding="utf-8")
 print("Output path: ", out_path)
